@@ -99,6 +99,7 @@
 		E59BE3A2232CCFCB007EAFF0 /* bestbefore */ = {
 			isa = PBXGroup;
 			children = (
+				E59BE3D3232CD057007EAFF0 /* Top */,
 				E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */,
 				E59BE3A5232CCFCB007EAFF0 /* FirstViewController.swift */,
 				E59BE3A7232CCFCB007EAFF0 /* SecondViewController.swift */,
@@ -126,6 +127,13 @@
 				E59BE3C7232CCFCD007EAFF0 /* Info.plist */,
 			);
 			path = bestbeforeUITests;
+			sourceTree = "<group>";
+		};
+		E59BE3D3232CD057007EAFF0 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD57B42JRX;
 				INFOPLIST_FILE = bestbefore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KD57B42JRX;
 				INFOPLIST_FILE = bestbefore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
