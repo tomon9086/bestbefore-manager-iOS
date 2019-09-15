@@ -12,7 +12,8 @@
 		E59BE3BB232CCFCD007EAFF0 /* bestbeforeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3BA232CCFCD007EAFF0 /* bestbeforeTests.swift */; };
 		E59BE3C6232CCFCD007EAFF0 /* bestbeforeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3C5232CCFCD007EAFF0 /* bestbeforeUITests.swift */; };
 		E59BE3D5232CD6BB007EAFF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3D4232CD6BB007EAFF0 /* RootViewController.swift */; };
-		E5D3ACFC232DC01E00703DFB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5ABB995232D26DE00FC71AF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5D3AD04232E0CA900703DFB /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D3AD02232E0C9700703DFB /* SnapKit.framework */; };
+		E5D3AD05232E0CA900703DFB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5D3AD02232E0C9700703DFB /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E5D3ACFD232DC01E00703DFB /* Embed Frameworks */ = {
+		E5D3AD06232E0CA900703DFB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E5D3ACFC232DC01E00703DFB /* SnapKit.framework in Embed Frameworks */,
+				E5D3AD05232E0CA900703DFB /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +59,7 @@
 		E59BE3C5232CCFCD007EAFF0 /* bestbeforeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestbeforeUITests.swift; sourceTree = "<group>"; };
 		E59BE3C7232CCFCD007EAFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59BE3D4232CD6BB007EAFF0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		E5ABB995232D26DE00FC71AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E5D3AD02232E0C9700703DFB /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D3AD04232E0CA900703DFB /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +95,7 @@
 				E59BE3B9232CCFCD007EAFF0 /* bestbeforeTests */,
 				E59BE3C4232CCFCD007EAFF0 /* bestbeforeUITests */,
 				E59BE3A1232CCFCB007EAFF0 /* Products */,
-				E5ABB992232D263300FC71AF /* Frameworks */,
+				E5D3AD01232E0C9700703DFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +112,9 @@
 		E59BE3A2232CCFCB007EAFF0 /* bestbefore */ = {
 			isa = PBXGroup;
 			children = (
+				E5D3ACFE232DF01800703DFB /* List */,
 				E59BE3D7232CD9C2007EAFF0 /* Settings */,
 				E59BE3D6232CD810007EAFF0 /* Detail */,
-				E59BE3D3232CD057007EAFF0 /* Top */,
 				E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */,
 				E59BE3AC232CCFCC007EAFF0 /* Assets.xcassets */,
 				E59BE3B1232CCFCC007EAFF0 /* Info.plist */,
@@ -139,13 +141,6 @@
 			path = bestbeforeUITests;
 			sourceTree = "<group>";
 		};
-		E59BE3D3232CD057007EAFF0 /* Top */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Top;
-			sourceTree = "<group>";
-		};
 		E59BE3D6232CD810007EAFF0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,10 +155,17 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		E5ABB992232D263300FC71AF /* Frameworks */ = {
+		E5D3ACFE232DF01800703DFB /* List */ = {
 			isa = PBXGroup;
 			children = (
-				E5ABB995232D26DE00FC71AF /* SnapKit.framework */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E5D3AD01232E0C9700703DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5D3AD02232E0C9700703DFB /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,7 +180,7 @@
 				E59BE39C232CCFCB007EAFF0 /* Sources */,
 				E59BE39D232CCFCB007EAFF0 /* Frameworks */,
 				E59BE39E232CCFCB007EAFF0 /* Resources */,
-				E5D3ACFD232DC01E00703DFB /* Embed Frameworks */,
+				E5D3AD06232E0CA900703DFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
