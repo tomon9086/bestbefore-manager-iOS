@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E59BE3A4232CCFCB007EAFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */; };
-		E59BE3A6232CCFCB007EAFF0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3A5232CCFCB007EAFF0 /* FirstViewController.swift */; };
-		E59BE3A8232CCFCB007EAFF0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3A7232CCFCB007EAFF0 /* SecondViewController.swift */; };
-		E59BE3AB232CCFCB007EAFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59BE3A9232CCFCB007EAFF0 /* Main.storyboard */; };
 		E59BE3AD232CCFCC007EAFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59BE3AC232CCFCC007EAFF0 /* Assets.xcassets */; };
-		E59BE3B0232CCFCC007EAFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59BE3AE232CCFCC007EAFF0 /* LaunchScreen.storyboard */; };
 		E59BE3BB232CCFCD007EAFF0 /* bestbeforeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3BA232CCFCD007EAFF0 /* bestbeforeTests.swift */; };
 		E59BE3C6232CCFCD007EAFF0 /* bestbeforeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3C5232CCFCD007EAFF0 /* bestbeforeUITests.swift */; };
+		E59BE3D5232CD6BB007EAFF0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BE3D4232CD6BB007EAFF0 /* RootViewController.swift */; };
+		E5D3ACFC232DC01E00703DFB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5ABB995232D26DE00FC71AF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +32,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E5D3ACFD232DC01E00703DFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5D3ACFC232DC01E00703DFB /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E59BE3A0232CCFCB007EAFF0 /* bestbefore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bestbefore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E59BE3A5232CCFCB007EAFF0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E59BE3A7232CCFCB007EAFF0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		E59BE3AA232CCFCB007EAFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 0; };
 		E59BE3AC232CCFCC007EAFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E59BE3AF232CCFCC007EAFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E59BE3B1232CCFCC007EAFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59BE3B6232CCFCD007EAFF0 /* bestbeforeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bestbeforeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59BE3BA232CCFCD007EAFF0 /* bestbeforeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestbeforeTests.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		E59BE3C1232CCFCD007EAFF0 /* bestbeforeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bestbeforeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59BE3C5232CCFCD007EAFF0 /* bestbeforeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestbeforeUITests.swift; sourceTree = "<group>"; };
 		E59BE3C7232CCFCD007EAFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59BE3D4232CD6BB007EAFF0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E5ABB995232D26DE00FC71AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 				E59BE3B9232CCFCD007EAFF0 /* bestbeforeTests */,
 				E59BE3C4232CCFCD007EAFF0 /* bestbeforeUITests */,
 				E59BE3A1232CCFCB007EAFF0 /* Products */,
+				E5ABB992232D263300FC71AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,14 +110,13 @@
 		E59BE3A2232CCFCB007EAFF0 /* bestbefore */ = {
 			isa = PBXGroup;
 			children = (
+				E59BE3D7232CD9C2007EAFF0 /* Settings */,
+				E59BE3D6232CD810007EAFF0 /* Detail */,
 				E59BE3D3232CD057007EAFF0 /* Top */,
 				E59BE3A3232CCFCB007EAFF0 /* AppDelegate.swift */,
-				E59BE3A5232CCFCB007EAFF0 /* FirstViewController.swift */,
-				E59BE3A7232CCFCB007EAFF0 /* SecondViewController.swift */,
-				E59BE3A9232CCFCB007EAFF0 /* Main.storyboard */,
 				E59BE3AC232CCFCC007EAFF0 /* Assets.xcassets */,
-				E59BE3AE232CCFCC007EAFF0 /* LaunchScreen.storyboard */,
 				E59BE3B1232CCFCC007EAFF0 /* Info.plist */,
+				E59BE3D4232CD6BB007EAFF0 /* RootViewController.swift */,
 			);
 			path = bestbefore;
 			sourceTree = "<group>";
@@ -136,6 +146,28 @@
 			path = Top;
 			sourceTree = "<group>";
 		};
+		E59BE3D6232CD810007EAFF0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E59BE3D7232CD9C2007EAFF0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E5ABB992232D263300FC71AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5ABB995232D26DE00FC71AF /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +178,7 @@
 				E59BE39C232CCFCB007EAFF0 /* Sources */,
 				E59BE39D232CCFCB007EAFF0 /* Frameworks */,
 				E59BE39E232CCFCB007EAFF0 /* Resources */,
+				E5D3ACFD232DC01E00703DFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,9 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59BE3B0232CCFCC007EAFF0 /* LaunchScreen.storyboard in Resources */,
 				E59BE3AD232CCFCC007EAFF0 /* Assets.xcassets in Resources */,
-				E59BE3AB232CCFCB007EAFF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59BE3A8232CCFCB007EAFF0 /* SecondViewController.swift in Sources */,
 				E59BE3A4232CCFCB007EAFF0 /* AppDelegate.swift in Sources */,
-				E59BE3A6232CCFCB007EAFF0 /* FirstViewController.swift in Sources */,
+				E59BE3D5232CD6BB007EAFF0 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,25 +333,6 @@
 			targetProxy = E59BE3C2232CCFCD007EAFF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E59BE3A9232CCFCB007EAFF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E59BE3AA232CCFCB007EAFF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E59BE3AE232CCFCC007EAFF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E59BE3AF232CCFCC007EAFF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E59BE3C8232CCFCD007EAFF0 /* Debug */ = {
@@ -446,6 +457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD57B42JRX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = bestbefore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD57B42JRX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = bestbefore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
