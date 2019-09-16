@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class RootViewController: UIViewController {
     
@@ -22,6 +24,18 @@ class RootViewController: UIViewController {
         label.snp.makeConstraints({
             $0.centerX.equalTo(view.snp.centerX)
             $0.centerY.equalTo(view.snp.centerY)
+        })
+        
+        let button = UIButton(type: UIButton.ButtonType.system)
+        self.view.addSubview(button)
+        button.setTitle("tap!", for: .normal)
+        button.sizeToFit()
+        button.snp.makeConstraints({
+            $0.centerX.equalTo(view.snp.centerX)
+            $0.centerY.equalTo(view.snp.centerY).offset(40)
+        })
+        button.rx.tap.bind(onNext: {
+            label.text = "Foo!"
         })
     }
 

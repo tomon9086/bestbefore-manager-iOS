@@ -5,6 +5,9 @@
       location = "container:"
       name = "Libraries">
       <FileRef
+         location = "group:Carthage/Checkouts/RxSwift/Rx.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Carthage/Checkouts/SnapKit/SnapKit.xcodeproj">
       </FileRef>
    </Group>
