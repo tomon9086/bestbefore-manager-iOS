@@ -20,10 +20,9 @@ class RootViewController: UIViewController {
         
         let label = UILabel()
         self.view.addSubview(label)
-        label.text = "Hello!"
         label.snp.makeConstraints({
             $0.centerX.equalTo(view.snp.centerX)
-            $0.centerY.equalTo(view.snp.centerY)
+            $0.centerY.equalTo(view.snp.centerY).offset(-300)
         })
         
         let button = UIButton(type: UIButton.ButtonType.system)
@@ -32,11 +31,25 @@ class RootViewController: UIViewController {
         button.sizeToFit()
         button.snp.makeConstraints({
             $0.centerX.equalTo(view.snp.centerX)
-            $0.centerY.equalTo(view.snp.centerY).offset(40)
+            $0.centerY.equalTo(view.snp.centerY).offset(-250)
         })
         button.rx.tap.bind(onNext: {
             label.text = "Foo!"
         })
+        
+        let textbox = UITextView()
+        self.view.addSubview(textbox)
+        textbox.layer.borderWidth = 1
+        textbox.layer.cornerRadius = 10
+        textbox.layer.borderColor = UIColor.gray.cgColor
+        textbox.snp.makeConstraints({
+            $0.centerX.equalTo(view.snp.centerX)
+            $0.top.equalTo(view.snp.centerY).offset(-200)
+            $0.width.equalTo(view.snp.width).offset(-40)
+            $0.height.equalTo(100)
+        })
+        textbox.rx.text.bind(to: label.rx.text)
+        label.text = "Hello!"
     }
 
 }
