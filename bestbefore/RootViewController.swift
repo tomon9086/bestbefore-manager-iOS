@@ -50,6 +50,23 @@ class RootViewController: UIViewController {
         })
         textbox.rx.text.bind(to: label.rx.text)
         label.text = "Hello!"
+        
+        let sourceArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        Observable.from(sourceArray)
+            .filter({
+                $0 % 2 == 0
+            })
+            .bind(onNext: {
+                print($0)
+            })
+        Observable.from(sourceArray)
+            .scan(0, accumulator: { (sum, value) in
+                sum + value
+            })
+            .takeLast(1)
+            .bind(onNext: {
+                print($0)
+            })
     }
 
 }
